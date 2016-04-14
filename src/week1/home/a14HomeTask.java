@@ -20,7 +20,7 @@ public class a14HomeTask {
 
         int[] numbersArray = new int[charNumbers.length];
 
-        for (int x = 0; x < numbers.length(); x+=1) {
+        for (int x = 0; x < numbers.length(); x++) {
             numbersArray[x] = Character.getNumericValue(charNumbers[x]);
             System.out.println(numbersArray[x]);
         }

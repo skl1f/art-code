@@ -15,7 +15,7 @@ public class _29HomeTask {
         int counter = 0;
 
         for (char num: value.toCharArray()) {
-            if (num == '5') {
+            if (num % '5' == 0) {
                 counter +=1;
             }
         }
