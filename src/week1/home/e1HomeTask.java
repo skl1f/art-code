@@ -9,11 +9,14 @@ public class e1HomeTask {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please fill a number to convert in binary:");
+        System.out.println("Please fill a number to convert in binary format:");
 
         int inputInt = scanner.nextInt();
+        String binaryReplresentaion = Integer.toBinaryString(inputInt);
+        System.out.println(binaryReplresentaion);
 
-        System.out.println(Integer.toBinaryString(inputInt));
+        int outputInt = Integer.parseInt(binaryReplresentaion, 2);
 
+        System.out.println(outputInt);
     }
 }

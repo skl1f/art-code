@@ -1,5 +1,6 @@
 package week1.home;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 /**
@@ -10,13 +11,14 @@ public class e2HomeTask {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please fill a number to calculate factorial:");
 
-        int inputInt = scanner.nextInt();
-        long facrotial = 1;
+        BigInteger inputInt =  BigInteger.valueOf(scanner.nextInt());
 
-        for (int x = 2 ; x <= inputInt; x++) {
-            facrotial = facrotial * x;
+        BigInteger factorial = BigInteger.valueOf(1);
+
+        for (BigInteger x = BigInteger.valueOf(2) ; x.compareTo(inputInt) == -1 | x.equals(inputInt); x = x.add(BigInteger.valueOf(1))) {
+            factorial = factorial.multiply(x);
         }
 
-        System.out.println(inputInt + "! = " + facrotial);
+        System.out.println(inputInt + "! = " + factorial);
     }
 }
