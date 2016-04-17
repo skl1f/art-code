@@ -10,6 +10,9 @@ public class _05DataTypeFighting {
         long l = 12222L;
         float f = 332.5f;
 
+        System.out.println("Long = " + l);
+        System.out.println("Float = " + f);
+
         int c = (int) (d * a);
         System.out.println(c);
     }

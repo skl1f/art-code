@@ -3,7 +3,7 @@ package week1.day2;
 /**
  * Created by skl1f on 4/10/2016.
  */
-public class _02RelationalOper {
+public class _02RelationalOperation {
     public static void main(String[] args) {
         int a = 30;
         int b = 15;

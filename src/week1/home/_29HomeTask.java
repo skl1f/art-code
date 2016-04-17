@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * Created by skl1f on 4/12/2016.
+ * Program which will calculate how many times numbers repeats.
  */
 
 public class _29HomeTask {

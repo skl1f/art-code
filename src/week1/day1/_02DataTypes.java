@@ -15,13 +15,13 @@ public class _02DataTypes {
 
         char letter = 'C';
 
-        int letterInint = letter;
+        int letter1 = letter;
 
         System.out.println(age);
         System.out.println(b);
         System.out.println(salary);
         System.out.println(ff);
         System.out.println(letter);
-        System.out.println(letterInint);
+        System.out.println(letter1);
     }
 }
