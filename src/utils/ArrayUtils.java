@@ -2,6 +2,8 @@ package utils;
 
 /**
  * Created by skl1f on 4/16/2016.
+ * Methods for working with Arrays.
+ * Just for studying.
  */
 public class ArrayUtils {
     public static String arrayToString(int[] arr) {
@@ -15,7 +17,7 @@ public class ArrayUtils {
     public static int[] genArray(int size) {
         int[] resultArr = new int[size];
         for (int i = 0; i < size; i++) {
-            resultArr[i] = (int) (Math.random() * 2147483647);
+            resultArr[i] = i;
         }
         return resultArr;
     }

@@ -1,9 +1,10 @@
 package week2.day1;
 
-import utils.ArrayUtils;
+import java.util.Arrays;
 
 /**
  * Created by skl1f on 4/16/2016.
+ * Simple Arrays. Just for studying.
  */
 public class _02Arrays {
     public static void main(String[] args) {
@@ -18,7 +19,7 @@ public class _02Arrays {
         names[6] = "Name6";
         names[7] = "Name7";
 
-        System.out.println(ArrayUtils.arrayToString(names));
+        System.out.println(Arrays.toString(names));
 
     }
 }
