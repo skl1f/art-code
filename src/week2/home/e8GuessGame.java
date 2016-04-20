@@ -9,16 +9,11 @@ import java.util.Scanner;
 public class e8GuessGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int min = 25;
-        int max = 125;
-
+        int min = 25, max = 125, guess;
         int number = (int) (min + Math.random() * (max - min));
-        System.out.println("Secret Number " + number);
-        int guess;
 
         int attempt = 1;
-
-        while (attempt <= 5){
+        while (attempt <= 5) {
             guess = scanner.nextInt();
             if (guess == number) {
                 System.out.println("You Win!");
