@@ -13,7 +13,7 @@ public class e8GuessGame {
         int number = (int) (min + Math.random() * (max - min));
 
         System.out.printf("Please try guess number between %1$s and %2$s:", min, max);
-        while (guess != number && attempt <= 5) {
+        while (guess != number && attempt < 5) {
             guess = scanner.nextInt();
             attempt++;
             System.out.println(guess < number ? "Number should be bigger ;)" :
