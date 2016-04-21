@@ -8,7 +8,7 @@ import utils.ArrayUtils;
  */
 public class _33SwitchMinMax {
     public static void main(String[] args) {
-        int[] nums = ArrayUtils.genArray(15);
+        int[] nums = ArrayUtils.genArray(15, 0, 25);
         int min = nums[0], max = nums[0];
         int minId = 0, maxId = 0;
 
@@ -16,7 +16,9 @@ public class _33SwitchMinMax {
 
         for (int i = 1; i < nums.length; i++) {
             minId = nums[i] < min ? i : minId;
+            min = nums[minId];
             maxId = nums[i] > max ? i : maxId;
+            max = nums[maxId];
         }
 
         int tmp = nums[minId];
