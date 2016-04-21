@@ -13,12 +13,27 @@ public class e8GuessGame {
         int number = (int) (min + Math.random() * (max - min));
 
         System.out.printf("Please try guess number between %1$s and %2$s:", min, max);
-        while (guess != number && attempt < 5) {
+        while (guess != number && attempt <= 5) {
             guess = scanner.nextInt();
             attempt++;
-            System.out.println( guess < number ? "Try again! Number should be bigger ;)" :
-                    "Try again! Number should be less ;)");
+            System.out.println(guess < number ? "Number should be bigger ;)" :
+                    "Number should be less ;)");
         }
-        System.out.println( guess == number ? "You win!" : "Game Over");
+        String str;
+        switch (attempt) {
+            case 1:
+                str = "You Win! From first attempt. Lucky you!";
+                break;
+            case 2:
+                str = "Not bad. you guessed from second attempt.";
+                break;
+            case 3:
+            case 4:
+                str = "You Win!";
+                break;
+            default:
+                str = "Game Over";
+        }
+        System.out.println(str);
     }
 }
