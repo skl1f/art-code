@@ -23,9 +23,9 @@ public class e8GuessGame {
             }
         }
         if (guess == number) {
-            System.out.println("Game Over");
-        } else {
             System.out.println("You win!");
+        } else {
+            System.out.println("Game Over");
         }
     }
 }
