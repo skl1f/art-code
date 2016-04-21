@@ -9,16 +9,13 @@ import java.util.Scanner;
 public class e8GuessGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int min = 25, max = 125, guess;
+        int min = 25, max = 125, guess = 0, attempt = 0;
         int number = (int) (min + Math.random() * (max - min));
 
-        int attempt = 1;
-        while (attempt <= 5) {
+        System.out.printf("Please try guess number between %1$s and %2$s:", min, max);
+        while (guess != number && attempt <= 5) {
             guess = scanner.nextInt();
-            if (guess == number) {
-                System.out.println("You Win!");
-                return;
-            } else if (guess < number) {
+            if (guess < number) {
                 System.out.println("Try again! Number should be bigger ;)");
                 attempt++;
             } else if (guess > number) {
@@ -26,6 +23,8 @@ public class e8GuessGame {
                 attempt++;
             }
         }
+        System.out.println("You Win!");
+
 
     }
 }
