@@ -29,4 +29,19 @@ public class ArrayUtils {
         }
         return resultArr;
     }
+
+    public static int[] createOddEvenArray(int size, int min, int max) {
+        int[] array = new int[size];
+        for (int i = 0; i < array.length; i++) {
+            int random = (int) (min + Math.random() * (max - min));
+            if (i % 2 == 0) {
+                //even
+                array[i] = random % 2 == 0 ? random : ++random;
+            } else {
+                //odd
+                array[i] = random % 2 == 0 ? ++random : random;
+            }
+        }
+        return array;
+    }
 }
