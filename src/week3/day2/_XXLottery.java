@@ -22,6 +22,24 @@ public class _XXLottery {
     }
 
     private static void printCongrats(int guessedNumbers) {
+        String str;
+        switch (guessedNumbers) {
+            case 3:
+                str = "Not bad! You guessed 3 from 6 numbers";
+                break;
+            case 4:
+                str = "You Win! 4 from 6 numbers are correct!";
+                break;
+            case 5:
+                str = "Almost all! 5 from 6 numbers are correct!";
+                break;
+            case 6:
+                str = "Congrats! You are the lucky guy! You guessed all numbers!";
+                break;
+            default:
+                str = "Sorry, not enough numbers to win";
+        }
+        System.out.println(str);
         System.out.printf("You guessed %1s numbers", guessedNumbers);
 
     }
@@ -49,11 +67,13 @@ public class _XXLottery {
             while (true) {
                 System.out.printf("Please fill number %1s:", i + 1);
                 int input = scanner.nextInt();
-                if (!hasNumber(input, ticket)) {
+                if (input < 42 & input > 1) {
+                    System.out.println("Wrong range! Number should be between 1 and 42.");
+                } else if (!hasNumber(input, ticket)) {
                     ticket[i] = input;
                     break;
                 } else {
-                    System.out.println("Ticker already has this number. Try Again!");
+                    System.out.println("Ticket already has this number. Try Again!");
                 }
             }
         }
