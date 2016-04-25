@@ -37,7 +37,7 @@ public class _XXLottery {
                 str = "Congrats! You are the lucky guy! You guessed all numbers!";
                 break;
             default:
-                str = "Sorry, not enough numbers to win";
+                str = "Sorry, not enough numbers to win!";
         }
         System.out.println(str);
         System.out.printf("You guessed %1s numbers", guessedNumbers);
@@ -67,7 +67,7 @@ public class _XXLottery {
             while (true) {
                 System.out.printf("Please fill number %1s:", i + 1);
                 int input = scanner.nextInt();
-                if (input < 42 & input > 1) {
+                if (input < 1 | input > 43) {
                     System.out.println("Wrong range! Number should be between 1 and 42.");
                 } else if (!hasNumber(input, ticket)) {
                     ticket[i] = input;
