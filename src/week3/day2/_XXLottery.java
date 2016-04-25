@@ -40,7 +40,6 @@ public class _XXLottery {
                 str = "Sorry, not enough numbers to win!";
         }
         System.out.println(str);
-        System.out.printf("You guessed %1s numbers", guessedNumbers);
 
     }
 
