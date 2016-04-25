@@ -17,9 +17,9 @@ public class MatrixUtils {
     }
 
     public static void toString(int[][] matrix) {
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                System.out.print(String.format("%-2d ", matrix[i][j]));
+        for (int[] aMatrix : matrix) {
+            for (int j = 0; j < aMatrix.length; j++) {
+                System.out.print(String.format("%-2d ", aMatrix[j]));
             }
             System.out.println();
         }

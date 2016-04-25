@@ -2,9 +2,6 @@ package week3.day2;
 
 import utils.MatrixUtils;
 
-import java.util.ArrayList;
-import java.util.Set;
-
 /**
  * Created by skl1f on 4/24/2016.
  * Playing with matrix

@@ -2,8 +2,6 @@ package week2.home;
 
 import utils.ArrayUtils;
 
-import java.util.stream.IntStream;
-
 /**
  * Created by skl1f on 4/18/2016.
  * Program will find average sum of integer array

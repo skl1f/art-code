@@ -2,7 +2,6 @@ package week3.day1;
 
 import utils.ArrayUtils;
 import utils.MatrixUtils;
-import java.util.Arrays;
 
 /**
  * Created by skl1f on 4/23/2016.

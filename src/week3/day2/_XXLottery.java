@@ -46,9 +46,9 @@ public class _XXLottery {
     private static int compareNumbers(int[] lotteryNumbers, int[] lotteryTicket) {
         int guessed = 0;
         for (int i = 0; i < lotteryNumbers.length; i++) {
-            if (lotteryNumbers[i] == lotteryTicket[i]){
+            if (lotteryNumbers[i] == lotteryTicket[i]) {
                 guessed++;
-             }
+            }
         }
         return guessed;
     }
